@@ -19,23 +19,24 @@ public class SnakeAndLadder {
 	case Ladder:
 		Position=Position+Throw;
 		System.out.println("its a ladder position");
-            //checking whether position is below 100
+		//Ensuring the player gets to exact winning position i.e 100
 		if(Position>100 ) {
 		Position=Position-Throw;
 		}
 		break;
 	case Snake:
 		if(Position >= Throw) {
-			System.out.println("its a Snake position");
+			System.out.println("Its a Snake position");
 			Position=Position - Throw ; 
 		}
 		else {
 		    Position=Position;
 		}
-       	        break;
+	        break;
 	}
 	System.out.println("position is "+Position);
 	System.out.println("");
 	}
 	}
 }
+
